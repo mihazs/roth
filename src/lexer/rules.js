@@ -19,18 +19,17 @@ const keyword = [
     'do',
     'until',
     'then',
-    'real',
-    'char',
-    'array',
-    'and'];
+    '.'];
 
 export default {
     keyword,
+    identifier: /[a-zA-Z_][a-zA-Z0-9_]+/,
+    endline: ";",
     space: {match: /\s+/, lineBreaks: true},
-    identifier: /^[a-zA-Z_][a-zA-Z0-9_]*$/,
+    
     //IDEN: {match: /^[a-zA-Z_][a-zA-Z0-9_]*$/, type: moo.keywords({KW:["program"]})},
     /*keyword, */
-    endline: ";",
+    
     
 
 };
