@@ -10,7 +10,10 @@ describe("Análise léxica", function(){
             //expect(lexer.next()).to.undefined;
         });
         it("programa com corpo", function(){
-            const program = `program teste;\n begin\nend\n.`;
+            const program = 
+            `program teste;\n 
+            begin\n
+            end\n.`;
             lexer.reset(program);
             expect(lexer.next()).to.include({type: "keyword", value:"program"});
             expect(lexer.next()).to.include({type: "identifier", value:"teste"});

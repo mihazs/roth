@@ -21,10 +21,12 @@ const keyword = [
     'then',
     '.'];
 
+
 export default {
     keyword,
     identifier: /[a-zA-Z_][a-zA-Z0-9_]+/,
     endline: ";",
+    operator: ["+", "-", "*", "/"],
     space: {match: /\s+/, lineBreaks: true},
     
     //IDEN: {match: /^[a-zA-Z_][a-zA-Z0-9_]*$/, type: moo.keywords({KW:["program"]})},
