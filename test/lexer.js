@@ -23,6 +23,22 @@ describe("Análise léxica", function(){
             expect(lexer.next()).to.include({type: "keyword", value:"."});
             //expect(lexer.next()).to.undefined;
         });
+     
+    });
+    context("Comentário", () => {
+        it("bloco", () => {
+            lexer.reset(`/*comentário\n de bloco*/`);
+            const xp = lexer.next();
+            console.log(`XP: ${xp}`);
+            expect(xp).to.be.undefined;
+        });
+    })
+    context("Tipos de dados", function(){
+        it("literal", function(){
+            const program = `$isso é um literal$`;
+            lexer.reset(program);
+            expect(lexer.next()).to.include({type:"literal", value:"$isso é um literal$"});
+        })
     });
     
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
     "build": "babel src --out-dir ./dist",
-    "test": "./node_modules/.bin/mocha --require @babel/register --watch --watch-extensions js test/**/*.js"
+    "test": "./node_modules/.bin/mocha --require @babel/register -R spec --ui bdd --watch --watch-extensions js test/**/*.js"
   },
   "bin": {
     "roth": "./dist/index.js"

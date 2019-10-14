@@ -24,10 +24,15 @@ const keyword = [
 
 export default {
     keyword,
-    identifier: /[a-zA-Z_][a-zA-Z0-9_]+/,
+    comment: /\/\*[\s\S]+\*\//,
+    identifier: /[a-zA-Z_][a-zA-Z0-9_]{1,14},?/,
     endline: ";",
     operator: ["+", "-", "*", "/"],
     space: {match: /\s+/, lineBreaks: true},
+    literal: /\$(?:.{0,32})\$/,
+    
+
+    
     
     //IDEN: {match: /^[a-zA-Z_][a-zA-Z0-9_]*$/, type: moo.keywords({KW:["program"]})},
     /*keyword, */
