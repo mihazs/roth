@@ -36,6 +36,8 @@ Para executar um arquivo .roth e exibir a saída do analisador léxico basta uti
 node . run <caminho_do_arquivo_roth> --lex
 ```
 
+Os exemplos estão localizados na pasta examples, sendo que um deles "error.roth" é utilizado para o teste de erros.
+
 Bugs e demais sugestões, por favor abrir uma issue.
 
 ## Anexos

@@ -104,21 +104,18 @@ var _default = {
   numinteiro: /[0-9]+/,
   operator: ["+", "*", "/", "-", ">", ">=", "<>", "<", "="],
   symbol: ["]", "[", "(", ")", ":", ".", ";", "..", "$", ","],
-  keyword: ["declaravariaveis"],
+  keyword: ["declaravariaveis", "chamaprocedure"],
   identificador: {
     match: /[a-zA-Z_][a-zA-Z0-9_]{0,13}/,
     type: _moo["default"].keywords(_objectSpread({
       type: ["array", "integer", "char", "string", "real"],
-      keyword: ["program", "const", "procedure", "chamaprocedure"],
+      keyword: ["program", "const", "procedure"],
       operator: ["or", "and"]
     }, reserved))
   },
   space: {
     match: /\s+/,
     lineBreaks: true
-  } //IDEN: {match: /^[a-zA-Z_][a-zA-Z0-9_]*$/, type: moo.keywords({KW:["program"]})},
-
-  /*keyword, */
-
+  }
 };
 exports["default"] = _default;
