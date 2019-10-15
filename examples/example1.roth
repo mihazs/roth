@@ -3,7 +3,7 @@ program example;
     numeroPrimo : integer; 
     nome1, nome2, nome3 : string;
 begin
-
+    write($hello world$);
 end
 .
 

@@ -106,7 +106,7 @@ var _default = {
   symbol: ["]", "[", "(", ")", ":", ".", ";", "..", "$", ","],
   keyword: ["declaravariaveis"],
   identificador: {
-    match: /[a-zA-Z_][a-zA-Z0-9_]{1,14}/,
+    match: /[a-zA-Z_][a-zA-Z0-9_]{0,14}/,
     type: _moo["default"].keywords(_objectSpread({
       type: ["array", "integer", "char", "string", "real"],
       keyword: ["program", "const", "procedure", "chamaprocedure"],

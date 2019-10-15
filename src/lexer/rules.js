@@ -86,7 +86,7 @@ export default {
   symbol: ["]", "[", "(", ")", ":", ".", ";", "..", "$", ","],
   keyword: ["declaravariaveis"],
   identificador: {
-    match: /[a-zA-Z_][a-zA-Z0-9_]{1,14}/, type: moo.keywords({
+    match: /[a-zA-Z_][a-zA-Z0-9_]{0,14}/, type: moo.keywords({
         type: ["array", "integer", "char", "string", "real"],
         keyword: ["program", "const", "procedure", "chamaprocedure"],
         operator:["or", "and"],

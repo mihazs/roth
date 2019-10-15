@@ -1,0 +1,28 @@
+program teste;
+procedure iguais(a , b : integer)
+declaravariaveis texto : string;
+begin
+texto = $São iguais.$;
+if [a = b] then
+	begin
+		write(texto);
+	end
+else
+	begin
+		write($Não são iguais.$);
+	end	
+end
+;
+
+const mensagem_usuario = string;
+declaravariaveis num1, num2 : integer;
+
+begin 
+	mensagem_usuario = $Digite um número:$;
+	write(mensagem_usuario);
+	read(num1);
+	write(mensagem_usuario);
+	read(num2);
+	chamaprocedure iguais(num1, num2);
+end
+. 
