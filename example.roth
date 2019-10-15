@@ -1,0 +1,9 @@
+program example;
+    declaravariaveis 
+    numeroPrimo : integer; 
+    nome1, nome2, nome3 : string;
+begin
+
+end
+.
+

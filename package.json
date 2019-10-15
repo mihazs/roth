@@ -2,7 +2,7 @@
   "name": "roth",
   "version": "1.0.0",
   "description": "ROTH Language",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
     "build": "babel src --out-dir ./dist",
@@ -35,6 +35,9 @@
   },
   "dependencies": {
     "commander": "^3.0.1",
-    "moo": "^0.5.0"
+    "itt": "^0.7.1",
+    "mocha-logger": "^1.0.6",
+    "moo": "^0.5.0",
+    "yargs": "^14.2.0"
   }
 }
