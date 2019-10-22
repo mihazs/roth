@@ -82,6 +82,7 @@ export default {
   literal: /\$(?:.{0,31})\$/,
   numreal: /[0-9]+\.[0-9]+/,
   numinteiro: /[0-9]+/,
+  nomestring: /\"(?:.{0,31})\"/,
   operator: ["+", "*", "/", "-", ">", ">=", "<>", "<", "="],
   symbol: ["]", "[", "(", ")", ":", ".", ";", "..", "$", ","],
   keyword: ["declaravariaveis", "chamaprocedure"],
